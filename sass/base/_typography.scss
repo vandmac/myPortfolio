@@ -1,0 +1,16 @@
+.signature {
+  font-family: 'Italianno', cursive;
+  font-size: 92px;
+  margin: 0;
+  font-weight: normal;
+  opacity: 0;
+  @include base-animation(1s, 0);
+  transform: translateY(36px);
+}
+
+.position {
+  font-size: 24px;
+  margin-top: 8px;
+  opacity: 0;
+  @include base-animation(1s, 2s);
+}

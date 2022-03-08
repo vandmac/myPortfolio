@@ -1,0 +1,4 @@
+@mixin base-animation($duration, $delay) {
+  animation: fadeIn $duration ease-in-out forwards;
+  animation-delay: $delay;
+}

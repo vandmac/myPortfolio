@@ -1,0 +1,19 @@
+#main-footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 32px;
+  opacity: 0;
+  @include base-animation(1.5s, 5.5s);
+
+  a {
+    text-decoration: none;
+    color: $primary-color;
+    font-size: 30px;
+    margin: 0 16px;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+  }
+}
