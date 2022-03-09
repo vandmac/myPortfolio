@@ -1,10 +1,9 @@
 .main-container {
   position: relative;
   width: 100%;
-  // max-width: 1000px;
+  // max-width: 1320px;
   height: 100vh;
-  color: $primary-color;
-  background: $primary-background-color;
+  @include primary-color-set;
   display: flex;
   align-items: center;
   margin: 0 auto;
@@ -95,7 +94,7 @@
           width: 0;
           background: $primary-color;
           height: 1px;
-          transition: all 1000ms ease;
+          transition: all 1ms linear;
         }
 
         &:hover::after {

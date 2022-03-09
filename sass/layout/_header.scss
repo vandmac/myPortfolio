@@ -8,7 +8,7 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 24px 32px;
-  max-width: 1024px;
+  max-width: 1320px;
   opacity: 0;
   z-index: 3;
   background-color: $primary-background-color;
@@ -18,7 +18,7 @@
   a {
     color: $primary-color;
     text-decoration: none;
-    font-size: 24px;
+    font-size: 48px;
   }
 
   .nav-logo {
@@ -32,13 +32,16 @@
   .menu-items {
     display: flex;
     list-style: none;
-    gap: 24px;
+    gap: 48px;
 
     li {
       a {
         position: relative;
         text-transform: uppercase;
-        font-size: 18px;
+        font-size: 40px;
+        &:hover {
+          color: $secondary-color;
+        }
 
         &::after {
           content: '';
@@ -48,12 +51,12 @@
           width: 0;
           background: $primary-color;
           height: 1px;
-          transition: all 1000ms ease;
+          // transition: all 100ms linear;
         }
 
-        &:hover::after {
-          width: 100%;
-        }
+        // &:hover::after {
+        //   width: 100%;
+        // }
       }
     }
   }

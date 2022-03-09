@@ -2,3 +2,13 @@
   animation: fadeIn $duration ease-in-out forwards;
   animation-delay: $delay;
 }
+
+@mixin primary-color-set {
+  background-color: $primary-background-color;
+  color: $primary-color;
+}
+
+@mixin secondary-color-set {
+  background-color: $secondary-background-color;
+  color: $secondary-color;
+}
