@@ -127,9 +127,14 @@ body {
   color: #eeeeee;
 }
 
-.base-background-and-color {
+.primary-background-and-color {
   background-color: #222831;
   color: #eeeeee;
+}
+
+.secondary-background-and-color {
+  background-color: #393e46;
+  color: #00adb5;
 }
 
 .about-me {
@@ -154,7 +159,7 @@ body {
 
 #main-footer {
   position: absolute;
-  left: 10%;
+  left: 20%;
   bottom: 0;
   padding: 32px;
   opacity: 0;
@@ -190,7 +195,7 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: 0 auto;
-  padding: 24px 32px;
+  padding: 16px 32px;
   max-width: 1320px;
   opacity: 0;
   z-index: 3;
@@ -205,7 +210,7 @@ body {
 .main-nav a {
   color: #eeeeee;
   text-decoration: none;
-  font-size: 48px;
+  font-size: 40px;
 }
 
 .main-nav .nav-logo {
@@ -280,7 +285,8 @@ body {
 
 .main-container .middle-section {
   position: absolute;
-  left: 10%;
+  max-width: 1320px;
+  left: 20%;
   z-index: 2;
 }
 
@@ -313,9 +319,9 @@ body {
     right: 0;
     top: 0;
     display: none;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    background-color: #222831;
+    color: #eeeeee;
+    z-index: 5;
   }
   .mobile-menu-section #hamburger-menu-close-btn {
     position: fixed;

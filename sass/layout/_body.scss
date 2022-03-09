@@ -2,8 +2,12 @@ body {
   @include primary-color-set;
 }
 
-.base-background-and-color {
+.primary-background-and-color {
   @include primary-color-set;
+}
+
+.secondary-background-and-color {
+  @include secondary-color-set;
 }
 
 .about-me {

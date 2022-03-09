@@ -23,7 +23,8 @@
 
   .middle-section {
     position: absolute;
-    left: 10%;
+    max-width: 1320px;
+    left: 20%;
     z-index: 2;
 
     .button-group {
@@ -37,8 +38,7 @@
 }
 
 .mobile-menu-section {
-  background-color: $primary-background-color;
-  color: $primary-color;
+  @include primary-color-set;
   display: none;
 }
 
@@ -59,7 +59,9 @@
     right: 0;
     top: 0;
     display: none;
-    align-items: center;
+    @include primary-color-set;
+    z-index: 5;
+    // align-items: center;
 
     #hamburger-menu-close-btn {
       position: fixed;

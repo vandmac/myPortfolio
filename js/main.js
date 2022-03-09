@@ -8,7 +8,7 @@ const mobileMenuSection = document.querySelector('.mobile-menu-section');
 hamburgerMenuBtn.addEventListener('click', () => {
   mainContainer.classList.add('hamburger-menu-activated');
   hamburgerMenuBtn.style.display = 'none';
-  mobileMenuSection.style.display = 'flex';
+  mobileMenuSection.style.display = 'block';
 });
 hamburgerMenuCloseBtn.addEventListener('click', () => {
   mainContainer.classList.remove('hamburger-menu-activated');
