@@ -58,6 +58,8 @@
 
   .hamburger-menu {
     cursor: pointer;
+    background-color: $primary-background-color;
+    color: $primary-color;
     display: none;
   }
 }
