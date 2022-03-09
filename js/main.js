@@ -18,3 +18,5 @@ hamburgerMenuCloseBtn.addEventListener('click', () => {
 
 const myAudioPlayer = document.getElementById('my-audio-background');
 myAudioPlayer.volume = 0.02;
+
+

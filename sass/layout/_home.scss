@@ -23,7 +23,8 @@
   // }
 
   .middle-section {
-    position: relative;
+    position: absolute;
+    left: 10%;
     z-index: 2;
 
     .button-group {

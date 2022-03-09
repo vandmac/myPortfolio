@@ -1,8 +1,16 @@
 body {
-  background: $primary-background-color;
+  background-color: $primary-background-color;
 }
 
-.o-mnie {
+.base-background-and-color {
   background-color: $primary-background-color;
   color: $primary-color;
 }
+
+.about-me {
+  background-color: $primary-background-color;
+  color: $primary-color;
+  padding-top: 110px;
+}
+
+

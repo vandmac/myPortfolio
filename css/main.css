@@ -120,17 +120,23 @@
 }
 
 body {
-  background: black;
+  background-color: black;
 }
 
-.o-mnie {
+.base-background-and-color {
   background-color: black;
   color: white;
 }
 
+.about-me {
+  background-color: black;
+  color: white;
+  padding-top: 110px;
+}
+
 #main-footer {
   position: absolute;
-  left: 0;
+  left: 10%;
   bottom: 0;
   padding: 32px;
   opacity: 0;
@@ -167,8 +173,10 @@ body {
           justify-content: space-between;
   margin: 0 auto;
   padding: 24px 32px;
-  max-width: 1032px;
+  max-width: 1024px;
   opacity: 0;
+  z-index: 3;
+  background-color: black;
   font-family: 'Roboto Condensed', sans-serif;
   -webkit-animation: fadeIn 1.5s ease-in-out forwards;
           animation: fadeIn 1.5s ease-in-out forwards;
@@ -255,7 +263,8 @@ body {
 }
 
 .main-container .middle-section {
-  position: relative;
+  position: absolute;
+  left: 10%;
   z-index: 2;
 }
 

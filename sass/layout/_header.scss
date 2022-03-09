@@ -8,8 +8,10 @@
   justify-content: space-between;
   margin: 0 auto;
   padding: 24px 32px;
-  max-width: 1032px;
+  max-width: 1024px;
   opacity: 0;
+  z-index: 3;
+  background-color: $primary-background-color;
   font-family: 'Roboto Condensed', sans-serif;
   @include base-animation(1.5s, 5s);
 
