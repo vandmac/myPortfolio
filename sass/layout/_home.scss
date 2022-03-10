@@ -42,6 +42,14 @@
   display: none;
 }
 
+@media (max-width: 990px) {
+  section.experience{
+    .card{
+      min-height: 200px;
+    }
+  }
+}
+
 @media (max-width: 900px) {
   .main-container {
     &.hamburger-menu-activated {
@@ -67,7 +75,7 @@
       position: fixed;
       top: 24px;
       right: 24px;
-      color: $primary-color;
+      // color: $primary-color;
       cursor: pointer;
 
       i {

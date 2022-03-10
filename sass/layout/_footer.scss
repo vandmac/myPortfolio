@@ -11,6 +11,9 @@
     color: $primary-color;
     font-size: 30px;
     margin: 0 16px;
+    &:hover {
+      color: $secondary-color;
+    }
 
     &:first-of-type {
       margin-left: 0;

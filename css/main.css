@@ -41,7 +41,7 @@
 }
 
 ul {
-  list-style: none;
+  list-style-type: circle;
 }
 
 .signature {
@@ -157,6 +157,22 @@ body {
   color: #eeeeee;
 }
 
+section.experience .card {
+  min-height: 480px;
+  padding: 32px;
+  border-radius: 30%;
+  -webkit-box-shadow: 20px 20px 40px #00adb5;
+          box-shadow: 20px 20px 40px #00adb5;
+}
+
+section.education .card {
+  min-height: 180px;
+  padding: 32px;
+  border-radius: 30%;
+  -webkit-box-shadow: -20px -20px 120px #eeeeee;
+          box-shadow: -20px -20px 120px #eeeeee;
+}
+
 #main-footer {
   position: absolute;
   left: 20%;
@@ -174,6 +190,10 @@ body {
   color: #eeeeee;
   font-size: 30px;
   margin: 0 16px;
+}
+
+#main-footer a:hover {
+  color: #00adb5;
 }
 
 #main-footer a:first-of-type {
@@ -304,6 +324,12 @@ body {
   display: none;
 }
 
+@media (max-width: 990px) {
+  section.experience .card {
+    min-height: 200px;
+  }
+}
+
 @media (max-width: 900px) {
   .main-container.hamburger-menu-activated {
     -webkit-transform: translateX(-280px);
@@ -327,7 +353,6 @@ body {
     position: fixed;
     top: 24px;
     right: 24px;
-    color: #eeeeee;
     cursor: pointer;
   }
   .mobile-menu-section #hamburger-menu-close-btn i {
