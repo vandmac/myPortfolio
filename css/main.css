@@ -137,19 +137,32 @@ body {
   color: #00adb5;
 }
 
-.about-me {
-  background-color: #222831;
+.primary-color {
   color: #eeeeee;
-  padding-top: 110px;
 }
 
-.about-me .javascript-developer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.secondary-color {
+  color: #00adb5;
+}
+
+section.about-me {
+  padding-top: 80px;
+}
+
+section.about-me .card {
+  background-color: #393e46;
+  color: #00adb5;
+  padding: 32px;
+  border-radius: 20%;
+  -webkit-box-shadow: 20px 20px 40px #eeeeee;
+          box-shadow: 20px 20px 40px #eeeeee;
+}
+
+section.about-me .card .card-header {
+  width: 90%;
+  border-radius: 30%;
+  -webkit-box-shadow: 20px 5px 40px #eeeeee;
+          box-shadow: 20px 5px 40px #eeeeee;
 }
 
 .experience {
@@ -157,10 +170,15 @@ body {
   color: #eeeeee;
 }
 
+section.experience {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
 section.experience .card {
-  min-height: 480px;
-  padding: 32px;
-  border-radius: 30%;
+  min-height: 400px;
+  padding: 16px;
+  border-radius: 18%;
   -webkit-box-shadow: 20px 20px 40px #00adb5;
           box-shadow: 20px 20px 40px #00adb5;
 }
@@ -171,6 +189,45 @@ section.education .card {
   border-radius: 30%;
   -webkit-box-shadow: -20px -20px 120px #eeeeee;
           box-shadow: -20px -20px 120px #eeeeee;
+}
+
+section.skills {
+  background-color: #393e46;
+  color: #00adb5;
+}
+
+section.skills .card {
+  background-color: #393e46;
+  color: #00adb5;
+  min-height: 380px;
+  padding: 32px;
+  border-radius: 30%;
+  -webkit-box-shadow: 10px -10px 120px #eeeeee;
+          box-shadow: 10px -10px 120px #eeeeee;
+}
+
+section.skills .progress {
+  background-color: #393e46;
+  color: #00adb5;
+  height: 24px;
+  border-radius: 5%;
+  -webkit-box-shadow: 5px 5px 40px #00adb5;
+          box-shadow: 5px 5px 40px #00adb5;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+section.certificates {
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+section.certificates .card {
+  min-height: 240px;
+  padding: 32px;
+  border-radius: 18%;
+  -webkit-box-shadow: -20px -20px 40px #00adb5;
+          box-shadow: -20px -20px 40px #00adb5;
 }
 
 #main-footer {

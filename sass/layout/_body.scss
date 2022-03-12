@@ -10,12 +10,27 @@ body {
   @include secondary-color-set;
 }
 
-.about-me {
-  @include primary-color-set;
-  padding-top: 110px;
-  .javascript-developer {
-    display: flex;
-    justify-content: center;
+.primary-color {
+  color: $primary-color;
+}
+
+.secondary-color {
+  color: $secondary-color;
+}
+
+section.about-me {
+  padding-top: 80px;
+
+  .card {
+    @include secondary-color-set;
+    padding: 32px;
+    border-radius: 20%;
+    box-shadow: 20px 20px 40px $primary-color;
+    .card-header {
+      width: 90%;
+      border-radius: 30%;
+      box-shadow: 20px 5px 40px $primary-color;
+    }
   }
 }
 
@@ -24,10 +39,11 @@ body {
 }
 
 section.experience {
+  @include primary-color-set;
   .card {
-    min-height: 480px;
-    padding: 32px;
-    border-radius: 30%;
+    min-height: 400px;
+    padding: 16px;
+    border-radius: 18%;
     box-shadow: 20px 20px 40px $secondary-color;
   }
 }
@@ -39,15 +55,35 @@ section.education {
     border-radius: 30%;
     box-shadow: -20px -20px 120px $primary-color;
   }
-  // div.card {
-  //   @include cards;
-  //   min-height: 180px;
-  //   box-shadow: -10px -5px $secondary-color;
-  //   border: 2px solid $secondary-color;
-  //   .card-body {
-  //     h5 {
-  //       text-shadow: -4px -3px $primary-background-color;
-  //     }
-  //   }
-  // }
+}
+
+section.skills {
+  @include secondary-color-set;
+  .skills-content {
+  }
+  .card {
+    @include secondary-color-set;
+    min-height: 380px;
+    padding: 32px;
+    border-radius: 30%;
+    box-shadow: 10px -10px 120px $primary-color;
+  }
+  .progress {
+    @include secondary-color-set;
+    height: $progres-bar-height;
+    border-radius: 5%;
+    box-shadow: 5px 5px 40px $secondary-color;
+    font-size: $progres-bar-font-size;
+    line-height: $progres-bar-height;
+  }
+}
+
+section.certificates {
+  @include primary-color-set;
+  .card {
+    min-height: 240px;
+    padding: 32px;
+    border-radius: 18%;
+    box-shadow: -20px -20px 40px $secondary-color;
+  }
 }
