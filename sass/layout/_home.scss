@@ -48,6 +48,13 @@
       min-height: 200px;
     }
   }
+
+  section.skills {
+    .progress {
+      font-size: 13px;
+    }
+  }
+
 }
 
 @media (max-width: 900px) {

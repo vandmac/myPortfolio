@@ -17,7 +17,7 @@ hamburgerMenuCloseBtn.addEventListener('click', () => {
 });
 
 const myAudioPlayer = document.getElementById('my-audio-background');
-myAudioPlayer.volume = 0.02;
+myAudioPlayer.volume = 0.3;
 
 // popover initialize
 var popoverTriggerList = [].slice.call(
@@ -28,7 +28,9 @@ var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
 });
 
 // enable tooltips
-var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+var tooltipTriggerList = [].slice.call(
+  document.querySelectorAll('[data-bs-toggle="tooltip"]')
+);
 var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
-  return new bootstrap.Tooltip(tooltipTriggerEl)
-})
+  return new bootstrap.Tooltip(tooltipTriggerEl);
+});

@@ -14,17 +14,17 @@
 }
 
 @mixin cards {
-    font-family: 'Roboto Condensed', sans-serif;
-    padding: 8px;
-    border-radius: 5%;
-    .card-body {
-      h5{
-        text-transform:uppercase;
-        font-weight: bold;
-      }
-      h6{
-        text-transform:uppercase;
-        text-decoration: underline;
-      }
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 8px;
+  border-radius: 5%;
+  .card-body {
+    h5 {
+      text-transform: uppercase;
+      font-weight: bold;
     }
+    h6 {
+      text-transform: uppercase;
+      text-decoration: underline;
+    }
+  }
 }

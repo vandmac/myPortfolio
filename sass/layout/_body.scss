@@ -18,13 +18,24 @@ body {
   color: $secondary-color;
 }
 
+.am-photo-for-animation {
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  transform: scale(0.1);
+  right: -300px;
+  opacity: 0;
+  filter: grayscale(1);
+  animation: am-main-photo-animation 16s 1s normal ease-out both infinite;
+}
+
 section.about-me {
   padding-top: 80px;
 
   .card {
     @include secondary-color-set;
     padding: 32px;
-    border-radius: 20%;
+    border-radius: 18%;
     box-shadow: 20px 20px 40px $primary-color;
     .card-header {
       width: 90%;
@@ -42,7 +53,7 @@ section.experience {
   @include primary-color-set;
   .card {
     min-height: 400px;
-    padding: 16px;
+    padding: 32px;
     border-radius: 18%;
     box-shadow: 20px 20px 40px $secondary-color;
   }
@@ -50,23 +61,22 @@ section.experience {
 
 section.education {
   .card {
-    min-height: 180px;
+    min-height: 320px;
     padding: 32px;
-    border-radius: 30%;
+    border-radius: 18%;
     box-shadow: -20px -20px 120px $primary-color;
   }
 }
 
 section.skills {
   @include secondary-color-set;
-  .skills-content {
-  }
+
   .card {
     @include secondary-color-set;
     min-height: 380px;
     padding: 32px;
     border-radius: 30%;
-    box-shadow: 10px -10px 120px $primary-color;
+    box-shadow: 10px -10px 120px $secondary-color;
   }
   .progress {
     @include secondary-color-set;
@@ -79,11 +89,34 @@ section.skills {
 }
 
 section.certificates {
-  @include primary-color-set;
   .card {
+    @include secondary-color-set;
     min-height: 240px;
     padding: 32px;
     border-radius: 18%;
-    box-shadow: -20px -20px 40px $secondary-color;
+    box-shadow: -20px -20px 40px $primary-color;
+  }
+}
+
+section.portfolio {
+  .card-body {
+    color: $secondary-color;
+  }
+  .card {
+    @include primary-color-set;
+    min-height: 400px;
+    padding: 32px;
+    border-radius: 18%;
+    box-shadow: -20px 20px 40px $secondary-color;
+  }
+}
+
+section.contact {
+  .card {
+    @include secondary-color-set;
+    min-height: 240px;
+    padding: 32px;
+    border-radius: 18%;
+    box-shadow: -30px 30px 40px $primary-color;
   }
 }
