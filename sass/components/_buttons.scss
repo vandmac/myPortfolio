@@ -1,20 +1,22 @@
 .technology-btn {
   text-decoration: none;
-  color: $primary-color;
   display: inline-block;
   padding: 2px 10px;
-  background: $third-accent-color;
   border-left: 8px solid $primary-color;
+  border-radius:10%;
+  box-shadow: 10px -10px 20px $secondary-color;
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 4px;
   opacity: 0;
-  @include base-animation(1.5s, 3s);
-
+  @include base-animation (1.5s, 3s);
+  color:$primary-background-color;
+  
   &.btn-first-row {
     background: $first-accent-color;
     &:hover {
       background: $first-accent-focus-color;
+      color:black;
     }
   }
 
@@ -22,12 +24,23 @@
     background: $second-accent-color;
     &:hover {
       background: $second-accent-focus-color;
+       color:black;
     }
   }
+
   &.btn-third-row {
     background: $third-accent-color;
     &:hover {
       background: $third-accent-focus-color;
+      color:black;
+    }
+  }
+
+  &.btn-fourth-row {
+    background: $fourth-accent-color;
+    &:hover {
+      background: $fourth-accent-focus-color;
+      color:black;
     }
   }
 }

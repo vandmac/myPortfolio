@@ -10,7 +10,6 @@
   padding: 16px 32px;
   max-width: 1320px;
   opacity: 0;
-  z-index: 3;
   background-color: $primary-background-color;
   font-family: 'Roboto Condensed', sans-serif;
   @include base-animation(1.5s, 5s);
@@ -51,12 +50,12 @@
           width: 0;
           background: $primary-color;
           height: 1px;
-          // transition: all 100ms linear;
+          transition: all 100ms ease-in;
         }
 
-        // &:hover::after {
-        //   width: 100%;
-        // }
+        &:hover::after {
+          width: 100%;
+        }
       }
     }
   }
