@@ -14,11 +14,11 @@
     position: absolute;
     max-width: 1320px;
     left: 20%;
+    top: 40%;
     z-index: 2;
 
     .button-group {
       margin-bottom: 12px;
-
       &:first-of-type {
         margin-top: 12px;
       }
@@ -31,7 +31,7 @@
   display: none;
 }
 
-@media (max-width: 990px) {
+@media only screen and (max-width: 990px) {
   section.experience {
     .card {
       min-height: 200px;
@@ -45,8 +45,23 @@
   }
 }
 
-@media (max-width: 900px) {
+@media only screen and (max-width: 900px) {
   .main-container {
+    .middle-section {
+      position: absolute;
+      max-width: 1320px;
+      left: 20%;
+      top: 10%;
+      z-index: 2;
+
+      .button-group {
+        margin-bottom: 12px;
+        &:first-of-type {
+          margin-top: 12px;
+        }
+      }
+    }
+
     &.hamburger-menu-activated {
       transform: translateX(-280px);
       .hamburger-menu {
