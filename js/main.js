@@ -18,7 +18,7 @@ hamburgerMenuCloseBtn.addEventListener('click', () => {
 });
 
 const myAudioPlayer = document.getElementById('my-audio-background');
-myAudioPlayer.volume = 0.3;
+myAudioPlayer.volume = 0.25;
 
 // enable tooltips
 var tooltipTriggerList = [].slice.call(
