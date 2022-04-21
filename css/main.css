@@ -333,7 +333,7 @@ ul {
     position: absolute;
     max-width: 1320px;
     left: 20%;
-    top: 10%;
+    top: 100px;
     z-index: 2;
   }
   .main-container .middle-section .button-group {
