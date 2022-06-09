@@ -14,11 +14,11 @@ hamburgerMenuBtn.addEventListener('click', () => {
 hamburgerMenuCloseBtn.addEventListener('click', () => {
   mainContainer.classList.remove('hamburger-menu-activated');
   hamburgerMenuBtn.style.display = 'block';
-  mobileMenuSection.style.display = 'none';
+  mobileMenuSection.style.display='none';
 });
 
 const myAudioPlayer = document.getElementById('my-audio-background');
-myAudioPlayer.volume = 0.25;
+myAudioPlayer.volume = 0.30;
 
 // enable tooltips
 var tooltipTriggerList = [].slice.call(
