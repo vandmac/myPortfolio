@@ -27,18 +27,18 @@
             transform: translateX(-300px);
     opacity: 0.5;
   }
-  50% {
+  70% {
     opacity: 1;
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
   }
-  60% {
-    -webkit-transform: translateX(-600px);
-            transform: translateX(-600px);
+  80% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
   }
   90% {
-    -webkit-transform: translateX(-600px);
-            transform: translateX(-600px);
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
     opacity: 1;
@@ -63,18 +63,18 @@
             transform: translateX(-300px);
     opacity: 0.5;
   }
-  50% {
+  70% {
     opacity: 1;
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
   }
-  60% {
-    -webkit-transform: translateX(-600px);
-            transform: translateX(-600px);
+  80% {
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
   }
   90% {
-    -webkit-transform: translateX(-600px);
-            transform: translateX(-600px);
+    -webkit-transform: translateX(-350px);
+            transform: translateX(-350px);
     -webkit-filter: grayscale(0);
             filter: grayscale(0);
     opacity: 1;
@@ -330,11 +330,15 @@ ul {
 
 @media only screen and (max-width: 900px) {
   .main-container .middle-section {
+    text-align: left;
     position: absolute;
     max-width: 1320px;
-    left: 20%;
+    left: 8%;
     top: 100px;
     z-index: 2;
+  }
+  .main-container .middle-section h1 {
+    font-size: 70px;
   }
   .main-container .middle-section .button-group {
     margin-bottom: 12px;

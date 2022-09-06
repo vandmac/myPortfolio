@@ -17,16 +17,16 @@
     transform: translateX(-300px);
     opacity: 0.5;
   }
-  50% {
+  70% {
     opacity: 1;
     filter: grayscale(0);
   }
-  60% {
-    transform: translateX(-600px);
+  80% {
+    transform: translateX(-350px);
   }
 
   90% {
-    transform: translateX(-600px);
+    transform: translateX(-350px);
     filter: grayscale(0);
     opacity: 1;
   }
