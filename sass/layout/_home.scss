@@ -48,7 +48,7 @@
 @media only screen and (max-width: 900px) {
   .main-container {
     .middle-section {
-      h1{
+      h1 {
         font-size: 70px;
       }
       text-align: left;
@@ -67,7 +67,7 @@
     }
 
     &.hamburger-menu-activated {
-      transform: translateX(-280px);
+      // transform: translateX(-240px);
       .hamburger-menu {
         display: none;
       }
@@ -76,18 +76,16 @@
 
   .mobile-menu-section {
     position: fixed;
-    width: 280px;
-    height: 100vh;
-    right: 0;
+    right: 20px;
     top: 0;
+    width: 240px;
+    height: max-content;
+
     display: none;
     @include primary-color-set;
     z-index: 5;
 
     #hamburger-menu-close-btn {
-      position: fixed;
-      top: 24px;
-      right: 24px;
       cursor: pointer;
       i {
         font-size: 32px;
@@ -96,14 +94,12 @@
 
     .menu-items {
       list-style: none;
-      padding-left: 125px;
-
       a {
         text-decoration: none;
         color: $primary-color;
         font-family: 'Roboto', sans-serif;
         font-size: 20px;
-        margin: 16px 0;
+        margin: 4px 4px;
         display: inline-block;
         position: relative;
 

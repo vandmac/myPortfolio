@@ -5,7 +5,6 @@
             transform: translateY(0);
   }
 }
-
 @keyframes fadeIn {
   to {
     opacity: 1;
@@ -13,7 +12,6 @@
             transform: translateY(0);
   }
 }
-
 @-webkit-keyframes am-main-photo-animation {
   0% {
     opacity: 0;
@@ -49,7 +47,6 @@
     opacity: 0;
   }
 }
-
 @keyframes am-main-photo-animation {
   0% {
     opacity: 0;
@@ -85,7 +82,6 @@
     opacity: 0;
   }
 }
-
 /* COLORS */
 * {
   margin: 0;
@@ -99,7 +95,7 @@ ul {
 }
 
 .signature {
-  font-family: 'Italianno', cursive;
+  font-family: "Italianno", cursive;
   font-size: 92px;
   margin: 0;
   font-weight: normal;
@@ -138,38 +134,30 @@ ul {
           animation-delay: 3s;
   color: #222831;
 }
-
 .technology-btn.btn-first-row {
   background: #fa3939;
 }
-
 .technology-btn.btn-first-row:hover {
   background: #ce0808;
   color: black;
 }
-
 .technology-btn.btn-second-row {
   background: #1c92d1;
 }
-
 .technology-btn.btn-second-row:hover {
   background: #056ca3;
   color: black;
 }
-
 .technology-btn.btn-third-row {
   background: #ffd903;
 }
-
 .technology-btn.btn-third-row:hover {
   background: #e0ad02;
   color: black;
 }
-
 .technology-btn.btn-fourth-row {
   background: #af46ec;
 }
-
 .technology-btn.btn-fourth-row:hover {
   background: #8c08d8;
   color: black;
@@ -189,7 +177,7 @@ ul {
 }
 
 .main-nav {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
@@ -199,36 +187,31 @@ ul {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   margin: 0 auto;
   padding: 16px 32px;
   max-width: 1320px;
   z-index: 2;
   opacity: 0;
   background-color: #222831;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: "Roboto Condensed", sans-serif;
   -webkit-animation: fadeIn 1.5s ease-in-out forwards;
           animation: fadeIn 1.5s ease-in-out forwards;
   -webkit-animation-delay: 5s;
           animation-delay: 5s;
 }
-
 .main-nav a {
   color: #eeeeee;
   text-decoration: none;
   font-size: 40px;
 }
-
 .main-nav .nav-logo {
-  font-family: 'Italianno', cursive;
+  font-family: "Italianno", cursive;
 }
-
 .main-nav .nav-ico {
   margin-right: 40px;
 }
-
 .main-nav .menu-items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,19 +219,16 @@ ul {
   list-style: none;
   gap: 48px;
 }
-
 .main-nav .menu-items li a {
   position: relative;
   text-transform: uppercase;
   font-size: 40px;
 }
-
 .main-nav .menu-items li a:hover {
   color: #00adb5;
 }
-
 .main-nav .menu-items li a::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: 0;
@@ -258,11 +238,9 @@ ul {
   -webkit-transition: all 100ms ease-in;
   transition: all 100ms ease-in;
 }
-
 .main-nav .menu-items li a:hover::after {
   width: 100%;
 }
-
 .main-nav .hamburger-menu {
   cursor: pointer;
   background-color: #222831;
@@ -278,7 +256,6 @@ ul {
     display: block;
   }
 }
-
 .main-container {
   position: relative;
   width: 100%;
@@ -293,10 +270,9 @@ ul {
           align-items: center;
   margin: 0 auto;
   padding: 32px;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   z-index: 2;
 }
-
 .main-container .middle-section {
   position: absolute;
   max-width: 1320px;
@@ -304,11 +280,9 @@ ul {
   top: 40%;
   z-index: 2;
 }
-
 .main-container .middle-section .button-group {
   margin-bottom: 12px;
 }
-
 .main-container .middle-section .button-group:first-of-type {
   margin-top: 12px;
 }
@@ -327,7 +301,6 @@ ul {
     font-size: 13px;
   }
 }
-
 @media only screen and (max-width: 900px) {
   .main-container .middle-section {
     text-align: left;
@@ -346,28 +319,23 @@ ul {
   .main-container .middle-section .button-group:first-of-type {
     margin-top: 12px;
   }
-  .main-container.hamburger-menu-activated {
-    -webkit-transform: translateX(-280px);
-            transform: translateX(-280px);
-  }
   .main-container.hamburger-menu-activated .hamburger-menu {
     display: none;
   }
   .mobile-menu-section {
     position: fixed;
-    width: 280px;
-    height: 100vh;
-    right: 0;
+    right: 20px;
     top: 0;
+    width: 240px;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
     display: none;
     background-color: #222831;
     color: #eeeeee;
     z-index: 5;
   }
   .mobile-menu-section #hamburger-menu-close-btn {
-    position: fixed;
-    top: 24px;
-    right: 24px;
     cursor: pointer;
   }
   .mobile-menu-section #hamburger-menu-close-btn i {
@@ -375,19 +343,18 @@ ul {
   }
   .mobile-menu-section .menu-items {
     list-style: none;
-    padding-left: 125px;
   }
   .mobile-menu-section .menu-items a {
     text-decoration: none;
     color: #eeeeee;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     font-size: 20px;
-    margin: 16px 0;
+    margin: 4px 4px;
     display: inline-block;
     position: relative;
   }
   .mobile-menu-section .menu-items a::after {
-    content: '';
+    content: "";
     position: absolute;
     left: 0;
     bottom: 0;
@@ -401,7 +368,6 @@ ul {
     width: 100%;
   }
 }
-
 body {
   background-color: #222831;
   color: #eeeeee;
@@ -447,7 +413,6 @@ section.about-me .card {
   -webkit-box-shadow: 20px 20px 40px #eeeeee;
           box-shadow: 20px 20px 40px #eeeeee;
 }
-
 section.about-me .card .card-header {
   width: 90%;
   border-radius: 30%;
@@ -464,7 +429,6 @@ section.experience {
   background-color: #222831;
   color: #eeeeee;
 }
-
 section.experience .card {
   min-height: 400px;
   padding: 32px;
@@ -485,7 +449,6 @@ section.skills {
   background-color: #393e46;
   color: #00adb5;
 }
-
 section.skills .card {
   background-color: #393e46;
   color: #00adb5;
@@ -495,7 +458,6 @@ section.skills .card {
   -webkit-box-shadow: 10px -10px 120px #00adb5;
           box-shadow: 10px -10px 120px #00adb5;
 }
-
 section.skills .progress {
   background-color: #393e46;
   color: #00adb5;
@@ -520,7 +482,6 @@ section.certificates .card {
 section.portfolio .card-body {
   color: #00adb5;
 }
-
 section.portfolio .card {
   background-color: #222831;
   color: #eeeeee;
@@ -552,19 +513,15 @@ section.contact .card {
   -webkit-animation-delay: 5.5s;
           animation-delay: 5.5s;
 }
-
 #main-footer a {
   text-decoration: none;
   color: #eeeeee;
   font-size: 30px;
   margin: 0 16px;
 }
-
 #main-footer a:hover {
   color: #00adb5;
 }
-
 #main-footer a:first-of-type {
   margin-left: 0;
-}
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
